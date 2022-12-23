@@ -541,8 +541,8 @@ input[id="listInput"] {
   }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 800px) {
   #root {
-    margin-bottom: 200px;
+    margin-bottom: 300px;
   }
 }
