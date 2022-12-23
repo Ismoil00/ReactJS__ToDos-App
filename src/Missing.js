@@ -6,7 +6,7 @@ const Missing = () => {
     <main className="Missing">
       <h2>Page Not Found</h2>
       <p>
-        <Link to="/">Please, Visit Our Homepage!</Link>
+        <Link to="React_JS-todos-app/">Please, Visit Our Homepage!</Link>
       </p>
     </main>
   );
