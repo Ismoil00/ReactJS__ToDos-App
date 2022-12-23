@@ -28,9 +28,6 @@ function App() {
   const [filter, setFilter] = useState("All");
   const history = useHistory();
   const pageUrl = window.location.hash;
- /*  const url = window.location.hash;
-  console.log(url) */
-
 
   //Initial Reset:
   useEffect(() => {
