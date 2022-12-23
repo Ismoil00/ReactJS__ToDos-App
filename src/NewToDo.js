@@ -59,7 +59,7 @@ const NewToDo = ({
           <input type="date" className="newToDo_Input" onChange={(e) => setEndPoint(e.target.value)} />
         </div>
         <div className="newToDo_Btns">
-          <Link to="React_JS-todos-app/">
+          <Link to="/">
             <button className="goBackBtn">Cancel</button>
           </Link>
           <button type="submit" className="goBackBtn">

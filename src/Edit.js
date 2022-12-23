@@ -95,7 +95,7 @@ const Edit = ({
             />
           </div>
           <div className="newToDo_Btns">
-            <Link to="React_JS-todos-app/">
+            <Link to="/">
               <button className="goBackBtn">Cancel</button>
             </Link>
             <button
@@ -112,7 +112,7 @@ const Edit = ({
         <div className="Missing">
           <h2>Page Not Found</h2>
           <p>
-            <Link to="React_JS-todos-app/">Please, Visit Our Homepage!</Link>
+            <Link to="/">Please, Visit Our Homepage!</Link>
           </p>
         </div>
       )}

@@ -36,7 +36,7 @@ const ToDoPage = ({ toDos, handleDelete, addToFavorite }) => {
             {toDo.description ? toDo.description : ""}
           </p>
           <div className="showToDo_Btns">
-            <Link to={`React_JS-todos-app/edit/${toDo.id}`}>
+            <Link to={`/edit/${toDo.id}`}>
               <FaEdit
                 role="button"
                 aria-label={`Edit ${toDo.name}`}
@@ -50,7 +50,7 @@ const ToDoPage = ({ toDos, handleDelete, addToFavorite }) => {
               onClick={() => addToFavorite(toDo.id)}
               className="heartIcon"
             />
-            <Link to="React_JS-todos-app/">
+            <Link to="/">
               <FaTrashAlt
                 role="button"
                 onClick={() => handleDelete(toDo.id)}
@@ -59,7 +59,7 @@ const ToDoPage = ({ toDos, handleDelete, addToFavorite }) => {
               />
             </Link>
           </div>
-          <Link to="React_JS-todos-app/">
+          <Link to="/">
             <button className="goBackBtn">
               <span id="arrowLeft">&#60;</span>Go Back
             </button>
@@ -70,7 +70,7 @@ const ToDoPage = ({ toDos, handleDelete, addToFavorite }) => {
         <div className="Missing">
           <h2>Page Not Found</h2>
           <p>
-            <Link to="React_JS-todos-app/">Please, Visit Our Homepage!</Link>
+            <Link to="/">Please, Visit Our Homepage!</Link>
           </p>
         </div>
       )}

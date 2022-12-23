@@ -82,7 +82,7 @@ const Header = ({ search, setSearch, setFilter }) => {
             </button>
           </div>
         </div>
-        <Link to="React_JS-todos-app/todo">
+        <Link to="/todo">
           <button>
             Create Task <span>&#43;</span>
           </button>

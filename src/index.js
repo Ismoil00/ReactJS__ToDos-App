@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
-      <Route path="React_JS-todos-app/" component={App} />
+      <Route path="/" component={App} />
     </Router>
   </React.StrictMode>
 );

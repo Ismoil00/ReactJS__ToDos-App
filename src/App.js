@@ -162,7 +162,7 @@ function App() {
     <div className="App">
       <Header search={search} setSearch={setSearch} setFilter={setFilter} />
       <Switch>
-        <Route exact path="React_JS-todos-app/">
+        <Route exact path="/">
           <Home
             toDos={finalDisplay}
             addToFavorite={addToFavorite}
@@ -170,7 +170,7 @@ function App() {
             handleCheck={handleCheck}
           />
         </Route>
-        <Route exact path="React_JS-todos-app/todo">
+        <Route exact path="/todo">
           <NewToDo
             setTask={setTask}
             setDescription={setDescription}
@@ -180,14 +180,14 @@ function App() {
             submitNewToDo={submitNewToDo}
           />
         </Route>
-        <Route path="React_JS-todos-app/todo/:id">
+        <Route path="/todo/:id">
           <ToDoPage
             toDos={toDos}
             handleDelete={handleDelete}
             addToFavorite={addToFavorite}
           />
         </Route>
-        <Route path="React_JS-todos-app/edit/:id">
+        <Route path="/edit/:id">
           <Edit
             toDos={toDos}
             editTask={editTask}

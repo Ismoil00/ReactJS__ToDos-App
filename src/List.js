@@ -17,7 +17,7 @@ const List = ({ toDo, handleDelete, handleCheck, addToFavorite }) => {
           checked={toDo.checked}
           id="listInput"
         />
-        <Link to={`React_JS-todos-app/todo/${toDo.id}`}>
+        <Link to={`/todo/${toDo.id}`}>
           <spam
             style={toDo.checked ? { textDecoration: "line-through" } : null}
             className="listText"
@@ -41,7 +41,7 @@ const List = ({ toDo, handleDelete, handleCheck, addToFavorite }) => {
           onClick={() => addToFavorite(toDo.id)}
           className="heartIcon"
         />
-        <Link to={`React_JS-todos-app/edit/${toDo.id}`} >
+        <Link to={`/edit/${toDo.id}`} >
           <FaEdit
             role="button"
             title="Edit"
