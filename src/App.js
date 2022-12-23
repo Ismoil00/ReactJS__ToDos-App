@@ -27,7 +27,10 @@ function App() {
   const [filteredToDos, setFilteredToDos] = useState([]);
   const [filter, setFilter] = useState("All");
   const history = useHistory();
-  const pageUrl = window.location.pathname;
+  const pageUrl = window.location.hash;
+ /*  const url = window.location.hash;
+  console.log(url) */
+
 
   //Initial Reset:
   useEffect(() => {
@@ -38,9 +41,9 @@ function App() {
   function initialReset() {
     finalDisplay.forEach((each) => {
       const heartIcon = document.getElementById(`${each.id}`);
-      if (each.liked && pageUrl === "/") {
+      if (each.liked && pageUrl === "#/") {
         heartIcon.classList.add("heartIconColored");
-      } else if (!each.liked && pageUrl === "/"){
+      } else if (!each.liked && pageUrl === "#/"){
         heartIcon.classList.remove("heartIconColored");
       }
     });

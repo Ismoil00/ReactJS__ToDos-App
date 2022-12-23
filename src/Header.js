@@ -7,11 +7,11 @@ const Header = ({ search, setSearch, setFilter }) => {
   const menu = document.getElementById("dropDownMenu");
   const filterText = document.getElementById("filterText");
   const filterSec = document.getElementById("filterBtn");
-  const pageUrl = window.location.pathname;
+  const pageUrl = window.location.hash;
 
   useEffect(() => {
     const filterDisplay = () => {
-      if (pageUrl === "/#/") {
+      if (pageUrl === "#/") {
         filterSec.style.display = "block";
       } else {
         filterSec.style.display = "none";
