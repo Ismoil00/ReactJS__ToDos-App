@@ -11,7 +11,7 @@ const Header = ({ search, setSearch, setFilter }) => {
 
   useEffect(() => {
     const filterDisplay = () => {
-      if (pageUrl === "/") {
+      if (pageUrl === "/#/") {
         filterSec.style.display = "block";
       } else {
         filterSec.style.display = "none";
